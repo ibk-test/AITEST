@@ -109,5 +109,8 @@ runtime-properties/*.properties
 # Spring Loaded
 springloaded-*.jar
 
+# SSH keys
+.ssh/
+
 # Ant build files
 build.xml~
