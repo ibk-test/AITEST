@@ -1,0 +1,113 @@
+# Java source files - should be tracked by Git
+# Only compiled class files should be ignored
+*.class
+
+# Log files
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+# Eclipse
+.settings/
+bin/
+tmp/
+.metadata/
+.externalToolBuilders/
+*.launch
+.buildpath
+.project
+.classpath
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# NetBeans
+nbproject/private/
+build/
+dist/
+.netbeans/
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# Gradle
+.gradle/
+build/
+
+# Tomcat
+tomcat-*/logs/
+tomcat-*/temp/
+tomcat-*/work/
+
+# HSQLDB data
+hsqldb-data/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Broadleaf Commerce
+BroadleafCommerce/.settings/
+BroadleafCommerce/bin/
+BroadleafCommerce/tmp/
+BroadleafCommerce/.metadata/
+BroadleafCommerce/.externalToolBuilders/
+BroadleafCommerce/*.launch
+BroadleafCommerce/.buildpath
+BroadleafCommerce/.project
+BroadleafCommerce/.classpath
+
+# Legacy Demo Site
+LegacyDemoSite/.settings/
+LegacyDemoSite/bin/
+LegacyDemoSite/tmp/
+LegacyDemoSite/.metadata/
+LegacyDemoSite/.externalToolBuilders/
+LegacyDemoSite/*.launch
+LegacyDemoSite/.buildpath
+LegacyDemoSite/.project
+LegacyDemoSite/.classpath
+LegacyDemoSite/admin/target/
+LegacyDemoSite/site/target/
+LegacyDemoSite/core/target/
+
+# Runtime properties
+runtime-properties/*.properties
+
+# Spring Loaded
+springloaded-*.jar
+
+# Ant build files
+build.xml~

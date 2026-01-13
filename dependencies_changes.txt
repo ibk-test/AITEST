@@ -1,0 +1,21 @@
+BroadleafCommerce Project Dependencies 변경 사항 및 출처 정보
+
+1. 변경된 속성 및 실제 값:
+   - ${project.version} → 3.1.15-GA
+   - ${thymeleaf.version} → 2.1.3.RELEASE
+   - ${groovy.version} → 2.1.8
+   - ${geb.version} → 0.9.3
+   - ${spock.version} → 0.7-groovy-2.0
+   - ${selenium.version} → 2.42.2
+   - ${spring.version} → 3.2.12.RELEASE
+   - ${spring.security.version} → 3.1.3.RELEASE
+
+2. 출처 정보:
+   - ${project.version} (3.1.15-GA): ../../../AITEST/BroadleafCommerce/pom.xml 파일의 <version> 태그에서 확인
+   - ${thymeleaf.version} (2.1.3.RELEASE): ../../../AITEST/BroadleafCommerce/pom.xml 파일의 <thymeleaf.version> 속성에서 확인
+   - ${groovy.version} (2.1.8): ../../../AITEST/BroadleafCommerce/pom.xml 파일의 <groovy.version> 속성에서 확인
+   - ${geb.version} (0.9.3): ../../../AITEST/BroadleafCommerce/pom.xml 파일의 <geb.version> 속성에서 확인
+   - ${spock.version} (0.7-groovy-2.0): ../../../AITEST/BroadleafCommerce/pom.xml 파일의 <spock.version> 속성에서 확인
+   - ${selenium.version} (2.42.2): ../../../AITEST/BroadleafCommerce/pom.xml 파일의 <selenium.version> 속성에서 확인
+   - ${spring.version} (3.2.12.RELEASE): ../../../AITEST/BroadleafCommerce/pom.xml 파일의 <spring.version> 속성에서 확인
+   - ${spring.security.version} (3.1.3.RELEASE): ../../../AITEST/BroadleafCommerce/pom.xml 파일의 <spring.security.version> 속성에서 확인

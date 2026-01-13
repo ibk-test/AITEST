@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+                             http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.example</groupId>
+    <artifactId>broadleaf-deployer</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+    <name>Broadleaf Deployer</name>
+
+    <properties>
+        <tomcat.manager.url>http://localhost:8080/manager/text</tomcat.manager.url>
+        <tomcat.username>admin</tomcat.username>
+        <tomcat.password>admin</tomcat.password>
+    </properties>
+
+    <build>
+        <plugins>
+            <!-- Tomcat Maven Plugin for deployment -->
+            <plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <version>2.2</version>
+                <configuration>
+                    <url>${tomcat.manager.url}</url>
+                    <server>tomcat</server>
+                    <username>${tomcat.username}</username>
+                    <password>${tomcat.password}</password>
+                    <path>/admin</path>
+                    <warSourceDirectory>${project.basedir}/tomcat-9.0.104/webapps/admin</warSourceDirectory>
+                    <contextReloadable>true</contextReloadable>
+                </configuration>
+            </plugin>
+
+            <!-- Cargo Plugin for deployment -->
+            <plugin>
+                <groupId>org.codehaus.cargo</groupId>
+                <artifactId>cargo-maven2-plugin</artifactId>
+                <version>1.7.7</version>
+                <configuration>
+                    <container>
+                        <containerId>tomcat9x</containerId>
+                        <type>installed</type>
+                        <home>${project.basedir}/tomcat-9.0.104</home>
+                    </container>
+                    <configuration>
+                        <type>existing</type>
+                        <home>${project.basedir}/tomcat-9.0.104</home>
+                    </configuration>
+                    <deployables>
+                        <deployable>
+                            <location>${project.basedir}/tomcat-9.0.104/webapps/admin</location>
+                            <type>expanded</type>
+                            <properties>
+                                <context>admin</context>
+                            </properties>
+                        </deployable>
+                    </deployables>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
